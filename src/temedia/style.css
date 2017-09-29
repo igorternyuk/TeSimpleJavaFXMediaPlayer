@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.09.2017, 17:52:52
+    Author     : igor
+*/
+
+.button {
+    -fx-background-color: transparent;
+}
+
+#seekSlider{
+    -fx-opacity: 0.1;
+}
+
+#seekSlider:hover{
+    -fx-opacity: 1.0;
+}
+
+#openFile {
+    -fx-background-image: url("img/btnOpen.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#playVideo {
+    -fx-background-image: url("img/btnGo.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#pauseVideo {
+    -fx-background-image: url("img/btnPause.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#StopVideo {
+    -fx-background-image: url("img/btnStop.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#playSlower {
+    -fx-background-image: url("img/btnSlower.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#playFaster {
+    -fx-background-image: url("img/btnFaster.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#seekForward {
+    -fx-background-image: url("img/btnSeekForward.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#seekBackward {
+    -fx-background-image: url("img/btnSeekBackward.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#resetSpeed {
+    -fx-background-image: url("img/btnResetSpeed.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#exitProgram {
+    -fx-background-image: url("img/btnExit.png");
+    -fx-background-size: 16 16;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

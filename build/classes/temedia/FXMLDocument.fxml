@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="temedia.FXMLDocumentController">
+   <bottom>
+      <VBox alignment="CENTER" maxHeight="30.0" prefHeight="30.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="600.0" spacing="5.0">
+               <children>
+                  <Button fx:id="openFile" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="16.0" prefWidth="16.0" stylesheets="@style.css">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="playVideo" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#playVideo" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="pauseVideo" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#pauseVideo" onDragDetected="#pauseVideo" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="StopVideo" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#stopVideo" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="playSlower" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#slowerVideo" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="resetSpeed" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#setNormalVideoSpeed" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="playFaster" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#fasterVideo" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="seekBackward" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#seekBackward" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Label fx:id="lblDuration" maxHeight="20.0" minHeight="0" mnemonicParsing="false" prefHeight="20.0" text="Duration"> 
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="seekForward" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#seekForward" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="exitProgram" maxHeight="16.0" minHeight="0" mnemonicParsing="false" onAction="#exitVideo" prefHeight="16.0" prefWidth="16.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Slider fx:id="volumeSlider">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Slider>
+                  <Label fx:id="lblVolume" maxHeight="20.0" minHeight="0" mnemonicParsing="false" prefHeight="20.0">
+                      <HBox.margin>
+                        <Insets right="10.0" />
+                      </HBox.margin>
+                  </Label>                  
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="CENTER" />
+            <Slider fx:id="seekSlider" maxHeight="20.0" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
